@@ -45,7 +45,7 @@ Return JSON ONLY, matching this schema:
       },
     ],
     // 你之后可以调成 low/high 来模拟 Instant vs Thinking
-    reasoning: { effort: "low" },
+    reasoning: { effort: "medium" },
   });
 
   // r.output_text 是拼出来的文本；我们期望它是 JSON 字符串

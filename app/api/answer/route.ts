@@ -71,7 +71,7 @@ ${question}
     const r = await openai.responses.create({
       model: "gpt-5.1-chat-latest",
       input: [{ role: "user", content: [{ type: "input_text", text: prompt }] }],
-      reasoning: { effort: "low" },
+      reasoning: { effort: "medium" },
     });
 
     const answerText = (r.output_text ?? "").trim();
@@ -127,7 +127,7 @@ Return JSON ONLY:
     const r = await openai.responses.create({
       model: "gpt-5.1-chat-latest",
       input: [{ role: "user", content: [{ type: "input_text", text: prompt }] }],
-      reasoning: { effort: "low" },
+      reasoning: { effort: "medium" },
     });
 
     const text = (r.output_text ?? "").trim();
@@ -213,7 +213,7 @@ Return JSON ONLY:
   const r = await openai.responses.create({
     model: "gpt-5.1-chat-latest",
     input: [{ role: "user", content: [{ type: "input_text", text: prompt }] }],
-    reasoning: { effort: "low" },
+    reasoning: { effort: "medium" },
   });
 
   const text = (r.output_text ?? "").trim();
