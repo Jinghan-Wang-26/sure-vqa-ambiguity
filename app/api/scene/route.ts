@@ -17,7 +17,7 @@ Return JSON ONLY, matching this schema:
     {
       "id": "o1",
       "name": "bottle",
-      "count_guess": 1,
+      count_range: "1" | "2-3" | "5-10" | "many",
       "location": "right-middle",
       "attributes": ["transparent", "blue cap"],
       "visible_text": [],
